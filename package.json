@@ -1,0 +1,19 @@
+{
+  "name": "volthings3d",
+  "version": "1.0.0",
+  "description": "Volthings web page for 3D printing service",
+  "homepage": "https://github.com/Volthings/volthing3d#readme",
+  "bugs": {
+    "url": "https://github.com/Volthings/volthings3d/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Volthings/volthings3d.git"
+  },
+  "author": "Paolo Reyes",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
