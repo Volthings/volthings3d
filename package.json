@@ -14,6 +14,18 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "devserver": "live-server",
+    "prefix:css": "postcss css/style.comp.css -u autoprefixer -b 'last 10 versions' -o css/style.prefix.css",
+    "start": "npm run devserver",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.1"
   }
 }
