@@ -1,3 +1,11 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
 // Media query manager
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {

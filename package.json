@@ -19,7 +19,7 @@
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "devserver": "live-server",
     "prefix:css": "postcss css/style.comp.css -u autoprefixer -b 'last 10 versions' -o css/style.prefix.css",
-    "start": "npm run devserver",
+    "start": "npm-run-all --parallel watch:sass devserver",
     "watch:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "devDependencies": {

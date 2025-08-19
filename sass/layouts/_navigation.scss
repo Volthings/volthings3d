@@ -1,8 +1,13 @@
 .navigation {
-    position: relative;
-    font-size: 2rem;
+    position: fixed;
+    width: 100%;
+    font-size: 1.9rem;
     font-weight: 400;
-    margin-top: 1rem;
+    padding-top: 1rem;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+
+    z-index: 1000;
 
     &::after {
         content: '';
@@ -50,11 +55,11 @@
         }
 
         &:last-child {
-            margin-right: 2rem;
+            margin-right: 3rem;
         }
     }
 
     &__logo {
-        width: 20rem;
+        width: 17rem;
     }
 }

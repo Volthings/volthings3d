@@ -1,0 +1,35 @@
+.button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 7px;
+    color: $white-color;
+    transition: all 0.3s ease;
+
+    &:active {
+        transform: scale(0.97);
+    }
+
+    &--primary {
+        background-color: $site-blue-color;
+        border: 1px solid darken($site-blue-color, 10%);
+        
+        &:hover {
+            background-color: darken($site-blue-color, 15%);
+        }
+    }
+
+    &--secondary {
+        background-color: $white-color;
+        color: $gray-dark-color;
+        border: 1px solid $gray-light-color;
+        
+        &:hover {
+            border-color: darken($gray-light-color, 40%);
+            background-color: darken($white-color, 40%);
+            color: $white-color;
+        }
+    }
+}
