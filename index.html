@@ -3,14 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="assets/volthings_logo.png" type="image/x-icon">
+        <link rel="icon" href="assets/images/logos/volthings_logo.png" type="image/x-icon">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
         <title>Volthings3D</title>
     </head>
     <body>
         <nav class="navigation">
-            <a href="index.html" class="navigation__link"><img class="navigation__logo" src="assets/volthings3d.png" alt="Volthings Logo"></a>
+            <a href="index.html" class="navigation__link"><img class="navigation__logo" src="assets/images/logos/volthings3d.png" alt="Volthings Logo"></a>
             <ul class="navigation__list">
                 <a href="#home" class="navigation__link" id="home">Inicio</a>
                 <a href="#services" class="navigation__link" id="services">Servicios</a>
@@ -19,7 +20,7 @@
                 <a href="#catalog" class="navigation__link" id="catalog">Catálogo</a>
                 <a href="#about-us" class="navigation__link" id="about-us">Sobre Nosotros</a>
                 <a href="#contact" class="navigation__link" id="contact">Contacto</a>
-                <a href="#quote" class="navigation__link" id="quote">Cotizar Ahora</a>
+                <a href="#quote" class="navigation__link button button--primary" id="quote">Cotizar Ahora</a>
             </ul>
         </nav>
 
@@ -33,7 +34,7 @@
                             <p class="header__description">Transformamos tus ideas en realidad con tecnología de impresión 3D de última generación. Prototipos, piezas personalizadas y proyectos complejos con la máxima calidad.</p>
                         </div>
                         <div class="header__button-container">
-                            <a href="" class="button button--primary">Obtener Cotización &rarr;</a>
+                            <a href="" class="button button--primary">Obtener Cotización <i class="fa-solid fa-arrow-right arrow"></i></a>
                             <a href="" class="button button--secondary">Ver Catálogo</a>
                         </div>
                         <div class="header__stats-container">
@@ -44,7 +45,10 @@
                     </div>
                 </div>
                 <div class="col-1-of-2">
-                    Hola
+                    <div class="header__image-box">
+                        <img src="assets/images/banners/header_printing.webp" alt="Impresión 3D Demo" class="header__image">
+                        <p class="text-popup"><span class="green-circle"></span>Imprimiendo...</p>
+                    </div>
                 </div>
             </div>
         </header>

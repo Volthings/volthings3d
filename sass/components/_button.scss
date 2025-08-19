@@ -5,8 +5,8 @@
     font-size: 1.6rem;
     font-weight: 600;
     border-radius: 7px;
-    color: $white-color;
-    transition: all 0.3s ease;
+    color: $white-color !important;
+    transition: all 0.2s ease;
 
     &:active {
         transform: scale(0.97);
@@ -14,7 +14,6 @@
 
     &--primary {
         background-color: $site-blue-color;
-        border: 1px solid darken($site-blue-color, 10%);
         
         &:hover {
             background-color: darken($site-blue-color, 15%);
@@ -23,7 +22,7 @@
 
     &--secondary {
         background-color: $white-color;
-        color: $gray-dark-color;
+        color: $gray-dark-color !important;
         border: 1px solid $gray-light-color;
         
         &:hover {
