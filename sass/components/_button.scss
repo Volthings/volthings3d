@@ -7,16 +7,21 @@
     border-radius: 7px;
     color: $white-color !important;
     transition: all 0.2s ease;
+    text-transform: capitalize;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
 
     &:active {
-        transform: scale(0.97);
+        transform: scale(0.98);
     }
 
     &--primary {
         background-color: $site-blue-color;
         
         &:hover {
-            background-color: darken($site-blue-color, 15%);
+            background-color: darken($site-blue-color, 7%);
         }
     }
 
@@ -28,7 +33,14 @@
         &:hover {
             border-color: darken($gray-light-color, 40%);
             background-color: darken($white-color, 40%);
-            color: $white-color;
+            color: $white-color !important;
         }
+    }
+
+    &--round {
+        background-color: $white-color;
+        color: $gray-dark-color !important;
+        border-radius: 100rem;
+        padding: 1.2rem 2.5rem;
     }
 }

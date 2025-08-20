@@ -1,13 +1,19 @@
 // Colors
-$gray-dark-color: #2f2f2f;
+$gray-dark-color: #444444;
 $gray-medium-color: #666666;
 $gray-light-color: #b3b3b3;
+$gray-lighter-color: #f7f7f7;
 
 $black-color: #000000;
 $white-color: #ffffff;
 
 $volthings-blue-color: #02427F;
 $site-blue-color: #0478BE;
+
+$card-dark-start-color: #1a466e;
+$card-dark-end-color: #023c73;
+$card-light-start-color: lighten($card-dark-start-color, 12%);
+$card-light-end-color: lighten($card-dark-end-color, 12%);
 
 $green-dark-color: #00BE84;
 $green-light-color: #E6F9F3;
