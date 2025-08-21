@@ -4,8 +4,8 @@
     &__text {
         @include center-vertical;
         position: absolute;
-        width: calc((100% - #{$grid-horizontal-gap})/2 - #{$grid-inner-margin});
-        margin: 0 $grid-inner-margin;
+        width: calc((100% - #{$grid-horizontal-gap})/2 - 7rem);
+        margin: 0 7rem;
     }
 
     &__note {
